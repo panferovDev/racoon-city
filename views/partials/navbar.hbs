@@ -1,0 +1,18 @@
+ <nav>
+    <div class="nav-wrapper customwrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if user}}
+          Hello, {{user.name}}
+          {{else}}
+          Hello, Guest
+        {{/if}}
+        {{#if user}}
+        <li><a href="/user/logout">Выход</a></li>
+        {{else}}
+        <li><a href="/user/signup">Регистрация</a></li>
+        <li><a href="/user/signin">Вход</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
